@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaigoGurly Secure - Discord security, moderation and music bot</title>
+<meta name="description" content="All-in-one Discord bot: anti-nuke security, moderation, tickets, music, giveaways, scrims and tournaments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060914;--panel:#0d1226;--line:#1a2347;
+  --text:#e9edfb;--mute:#8f99bd;
+  --blue:#3d6bff;--red:#f0283c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sora',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+/* hero */
+.hero{position:relative;padding:72px 0 56px;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(110px);opacity:.35;z-index:0}
+.hero::before{background:var(--blue);left:-160px;top:-120px}
+.hero::after{background:var(--red);right:-180px;bottom:-200px;opacity:.28}
+.hero .wrap{position:relative;z-index:1}
+h1{font-size:clamp(2.2rem,8vw,3.8rem);font-weight:800;line-height:1.08;letter-spacing:-.02em;max-width:14ch}
+.lead{color:var(--mute);max-width:46ch;margin:18px 0 28px;font-size:1.02rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;color:#fff;border:1px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.btn.blue{background:var(--blue)}
+.btn.red{background:var(--red)}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--text)}
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:40px;color:var(--mute);font-size:.9rem}
+.stats b{display:block;color:var(--text);font-size:1.4rem}
+
+/* sections */
+section{padding:44px 0}
+h2{font-size:1.5rem;font-weight:800;margin-bottom:6px;letter-spacing:-.01em}
+.sub{color:var(--mute);margin-bottom:24px;max-width:52ch}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.feat div{padding:22px;background:var(--panel);border:1px solid var(--line);margin:-1px 0 0 -1px}
+.feat h3{font-size:1rem;margin-bottom:6px}
+.feat p{color:var(--mute);font-size:.9rem}
+
+/* plans */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.plan{border-radius:16px;padding:26px;background:var(--panel);border:1px solid var(--line)}
+.plan.basic{border-top:3px solid var(--blue)}
+.plan.premium{border-top:3px solid var(--red)}
+.plan .price{color:var(--mute);font-size:.9rem;margin-bottom:12px}
+.plan ul{list-style:none;margin:14px 0 22px}
+.plan li{padding:7px 0;border-bottom:1px solid var(--line);font-size:.92rem;color:var(--mute)}
+.plan li:last-child{border:0}
+
+/* footer */
+footer{padding:36px 0 50px;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line);margin-top:20px}
+footer .links{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:10px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Keep your server safe and busy.</h1>
+    <p class="lead">TaigoGurly Secure protects your Discord server from raids and nukes, handles moderation, and adds tickets, music, giveaways and esports tools.</p>
+    <div class="cta">
+      <a class="btn blue" href="https://discord.com/oauth2/authorize?client_id=1573056394423308378&permissions=8&integration_type=0&scope=bot+applications.commands">Add the free bot</a>
+      <a class="btn red" href="https://discord.gg/W4VvH5MKxC">Get Premium</a>
+      <a class="btn ghost" href="https://discord.gg/W4VvH5MKxC">Join support server</a>
+    </div>
+    <div class="stats">
+      <div><b>42+</b>commands</div>
+      <div><b>Slash</b>and prefix commands</div>
+      <div><b>24/7</b>music on Premium</div>
+    </div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <h2>What it does</h2>
+    <p class="sub">Everything a community server needs, in one bot.</p>
+    <div class="feat">
+      <div><h3>Security</h3><p>Anti-nuke, anti-raid, anti-spam, anti-webhook and permission-abuse protection, with security logs.</p></div>
+      <div><h3>Moderation</h3><p>Ban, kick, timeout, warn, purge and AutoMod, with moderation logs.</p></div>
+      <div><h3>Server setup</h3><p>Tickets, welcome, leave and boost messages, autoroles and reaction roles.</p></div>
+      <div><h3>Community</h3><p>Giveaways, polls, mini-games, autoresponder, invite and voice tracking.</p></div>
+      <div><h3>Esports</h3><p>Scrim slot registration, tournaments, team sign-up, brackets and results.</p></div>
+      <div><h3>Music</h3><p>Play, queue and volume control in voice channels, plus 24/7 mode on Premium.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <h2>Choose your plan</h2>
+    <p class="sub">Start free. Upgrade when your server needs more.</p>
+    <div class="plans">
+      <div class="plan basic">
+        <h3>Basic</h3>
+        <div class="price">Free</div>
+        <ul>
+          <li>Security and moderation</li>
+          <li>Tickets, welcome, leave, boost</li>
+          <li>Music with a queue limit</li>
+          <li>Limits on tickets, giveaways and scrims</li>
+        </ul>
+        <a class="btn blue" href="https://discord.com/oauth2/authorize?client_id=1573056394423308378&permissions=8&integration_type=0&scope=bot+applications.commands">Add Basic</a>
+      </div>
+      <div class="plan premium">
+        <h3>Premium</h3>
+        <div class="price">Ask in the support server</div>
+        <ul>
+          <li>Unlimited tickets, giveaways and scrims</li>
+          <li>24/7 music and 200% volume</li>
+          <li>Custom embeds with images and buttons</li>
+          <li>Animated emojis and the red premium look</li>
+        </ul>
+        <a class="btn red" href="https://discord.gg/W4VvH5MKxC">Get Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="https://discord.gg/W4VvH5MKxC">Support server</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=1573056394423308378&permissions=8&integration_type=0&scope=bot+applications.commands">Invite</a>
+      <a href="#features">Features</a>
+      <a href="#plans">Plans</a>
+    </div>
+    TaigoGurly Secure &copy; 2026. Not affiliated with Discord Inc.
+  </div>
+</footer>
+
+</body>
+</html>
